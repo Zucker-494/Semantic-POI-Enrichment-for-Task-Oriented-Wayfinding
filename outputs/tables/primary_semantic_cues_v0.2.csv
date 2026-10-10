@@ -1,0 +1,296 @@
+﻿decision_id,semantic_poi_id,poi_name,semantic_class,navigation_role_candidate,distance_m,locally_unique_class,cue_tier,decision_degree,junction_type,tier_rank
+P07_DP_0001,P07_POI_0073,场中路,other_named,context_candidate,35.05,True,B,5,multi_leg,1
+P07_DP_0004,P07_POI_0308,白日梦奶茶,food_drink,destination_candidate,38.11,True,B,5,multi_leg,1
+P07_DP_0005,P07_POI_0102,7,transport,landmark_candidate,36.01,False,A,5,multi_leg,0
+P07_DP_0006,P07_POI_0083,江湾体育场,transport,landmark_candidate,36.63,False,A,5,multi_leg,0
+P07_DP_0010,P07_POI_0207,仁德路逸仙路,transport,landmark_candidate,57.9,False,B,4,multi_leg,1
+P07_DP_0014,P07_POI_0074,逸仙路纪念路,transport,landmark_candidate,18.97,False,A,4,multi_leg,0
+P07_DP_0023,P07_POI_0127,中国光大银行,finance,destination_candidate,51.92,True,B,4,multi_leg,1
+P07_DP_0024,P07_POI_0127,中国光大银行,finance,destination_candidate,64.01,True,B,4,multi_leg,1
+P07_DP_0026,P07_POI_0257,三门路吉浦路,transport,landmark_candidate,58.37,False,B,4,multi_leg,1
+P07_DP_0028,P07_POI_0127,中国光大银行,finance,destination_candidate,57.72,True,B,4,multi_leg,1
+P07_DP_0029,P07_POI_0127,中国光大银行,finance,destination_candidate,43.21,True,B,4,multi_leg,1
+P07_DP_0040,P07_POI_0011,邯郸路运光路,transport,landmark_candidate,7.84,False,A,4,multi_leg,0
+P07_DP_0042,P07_POI_0338,老年大学,education,landmark_candidate,66.25,True,B,4,multi_leg,1
+P07_DP_0043,P07_POI_0339,老年活动中心,civic,landmark_candidate,36.67,True,A,4,multi_leg,0
+P07_DP_0044,P07_POI_0339,老年活动中心,civic,landmark_candidate,62.5,True,B,4,multi_leg,1
+P07_DP_0046,P07_POI_0202,政立路国权北路,transport,landmark_candidate,39.09,False,A,4,multi_leg,0
+P07_DP_0048,P07_POI_0260,武川路武东路,transport,landmark_candidate,22.85,False,A,4,multi_leg,0
+P07_DP_0050,P07_POI_0156,大柏树门诊部,health,destination_candidate,53.85,True,B,4,multi_leg,1
+P07_DP_0051,P07_POI_0156,大柏树门诊部,health,destination_candidate,40.7,True,B,4,multi_leg,1
+P07_DP_0052,P07_POI_0156,大柏树门诊部,health,destination_candidate,48.55,True,B,4,multi_leg,1
+P07_DP_0057,P07_POI_0093,复旦大学北区学生公寓南门,education,landmark_candidate,54.71,True,A,4,multi_leg,0
+P07_DP_0058,P07_POI_0093,复旦大学北区学生公寓南门,education,landmark_candidate,24.77,True,A,4,multi_leg,0
+P07_DP_0059,P07_POI_0075,复旦大学北区学生公寓北门,education,landmark_candidate,28.96,True,A,4,multi_leg,0
+P07_DP_0072,P07_POI_0275,主席像,visitor_landmark,landmark_candidate,63.82,True,B,4,multi_leg,1
+P07_DP_0075,P07_POI_0352,全家,retail,destination_candidate,52.6,True,B,4,multi_leg,1
+P07_DP_0077,P07_POI_0062,复旦大学,transport,landmark_candidate,36.03,False,A,4,multi_leg,0
+P07_DP_0078,P07_POI_0041,国定路邮政所,civic,landmark_candidate,21.86,True,A,4,multi_leg,0
+P07_DP_0080,P07_POI_0353,硕果,visitor_landmark,landmark_candidate,66.42,True,B,4,multi_leg,1
+P07_DP_0081,P07_POI_0285,国定新村,transport,landmark_candidate,49.04,False,B,4,multi_leg,1
+P07_DP_0082,P07_POI_0364,复旦大学第二附属学校（小学部）,education,landmark_candidate,62.52,True,B,4,multi_leg,1
+P07_DP_0083,P07_POI_0196,复旦大学,transport,landmark_candidate,53.87,False,B,4,multi_leg,1
+P07_DP_0084,P07_POI_0021,复旦大学,transport,landmark_candidate,55.32,False,B,4,multi_leg,1
+P07_DP_0085,P07_POI_0095,管理学院,education,landmark_candidate,79.56,True,B,4,multi_leg,1
+P07_DP_0086,P07_POI_0095,管理学院,education,landmark_candidate,63.8,True,B,4,multi_leg,1
+P07_DP_0087,P07_POI_0095,管理学院,education,landmark_candidate,61.56,True,B,4,multi_leg,1
+P07_DP_0091,P07_POI_0122,和记菜馆,food_drink,destination_candidate,71.26,True,B,4,multi_leg,1
+P07_DP_0092,P07_POI_0122,和记菜馆,food_drink,destination_candidate,66.86,True,B,4,multi_leg,1
+P07_DP_0107,P07_POI_0170,All The Lovers,food_drink,destination_candidate,52.6,False,B,4,multi_leg,1
+P07_DP_0109,P07_POI_0170,All The Lovers,food_drink,destination_candidate,48.8,False,B,4,multi_leg,1
+P07_DP_0117,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,27.55,False,B,4,multi_leg,1
+P07_DP_0119,P07_POI_0094,永昌烧味餐厅,food_drink,destination_candidate,57.03,False,B,4,multi_leg,1
+P07_DP_0121,P07_POI_0081,国权路,transport,landmark_candidate,47.9,False,B,4,multi_leg,1
+P07_DP_0122,P07_POI_0004,国权路,transport,landmark_candidate,49.29,False,B,4,multi_leg,1
+P07_DP_0124,P07_POI_0270,国顺路四平路,transport,landmark_candidate,41.21,False,B,4,multi_leg,1
+P07_DP_0125,P07_POI_0311,藏珑云海,food_drink,destination_candidate,29.5,False,B,4,multi_leg,1
+P07_DP_0126,P07_POI_0051,四平路国权路,transport,landmark_candidate,39.36,False,A,4,multi_leg,0
+P07_DP_0127,P07_POI_0333,罗森,retail,destination_candidate,66.73,True,B,4,multi_leg,1
+P07_DP_0138,P07_POI_0327,全家,retail,destination_candidate,76.03,True,B,4,multi_leg,1
+P07_DP_0141,P07_POI_0327,全家,retail,destination_candidate,38.77,True,B,4,multi_leg,1
+P07_DP_0142,P07_POI_0327,全家,retail,destination_candidate,45.1,True,B,4,multi_leg,1
+P07_DP_0143,P07_POI_0327,全家,retail,destination_candidate,46.37,True,B,4,multi_leg,1
+P07_DP_0144,P07_POI_0327,全家,retail,destination_candidate,52.02,True,B,4,multi_leg,1
+P07_DP_0147,P07_POI_0101,13,transport,landmark_candidate,29.84,False,A,4,multi_leg,0
+P07_DP_0150,P07_POI_0099,12,transport,landmark_candidate,32.14,False,A,4,multi_leg,0
+P07_DP_0151,P07_POI_0297,小喜田,food_drink,destination_candidate,8.91,False,B,4,multi_leg,1
+P07_DP_0152,P07_POI_0297,小喜田,food_drink,destination_candidate,12.22,False,B,4,multi_leg,1
+P07_DP_0153,P07_POI_0297,小喜田,food_drink,destination_candidate,30.43,False,B,4,multi_leg,1
+P07_DP_0161,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,77.1,True,B,4,multi_leg,1
+P07_DP_0165,P07_POI_0083,江湾体育场,transport,landmark_candidate,21.46,False,A,4,multi_leg,0
+P07_DP_0166,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,31.73,True,A,4,multi_leg,0
+P07_DP_0167,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,26.2,True,A,4,multi_leg,0
+P07_DP_0170,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,26.64,True,A,4,multi_leg,0
+P07_DP_0174,P07_POI_0143,五角场,other_named,context_candidate,71.01,True,B,4,multi_leg,1
+P07_DP_0175,P07_POI_0143,五角场,other_named,context_candidate,41.14,True,B,4,multi_leg,1
+P07_DP_0176,P07_POI_0105,政本路邮政支局,civic,landmark_candidate,79.41,True,B,4,multi_leg,1
+P07_DP_0177,P07_POI_0143,五角场,other_named,context_candidate,59.04,True,B,4,multi_leg,1
+P07_DP_0178,P07_POI_0143,五角场,other_named,context_candidate,27.66,True,B,4,multi_leg,1
+P07_DP_0180,P07_POI_0061,国定路黄兴路,transport,landmark_candidate,54.74,False,B,4,multi_leg,1
+P07_DP_0181,P07_POI_0143,五角场,other_named,context_candidate,17.28,True,B,4,multi_leg,1
+P07_DP_0182,P07_POI_0143,五角场,other_named,context_candidate,31.23,True,B,4,multi_leg,1
+P07_DP_0183,P07_POI_0143,五角场,other_named,context_candidate,76.49,True,B,4,multi_leg,1
+P07_DP_0185,P07_POI_0143,五角场,other_named,context_candidate,44.99,True,B,4,multi_leg,1
+P07_DP_0186,P07_POI_0143,五角场,other_named,context_candidate,56.24,True,B,4,multi_leg,1
+P07_DP_0187,P07_POI_0133,政立路市光路,transport,landmark_candidate,9.1,False,A,4,multi_leg,0
+P07_DP_0188,P07_POI_0047,6号出入口,other_named,context_candidate,53.71,True,B,4,multi_leg,1
+P07_DP_0189,P07_POI_0047,6号出入口,other_named,context_candidate,43.05,True,B,4,multi_leg,1
+P07_DP_0190,P07_POI_0126,五角场,transport,landmark_candidate,7.76,False,A,4,multi_leg,0
+P07_DP_0194,P07_POI_0026,五角场,transport,landmark_candidate,31.6,False,A,4,multi_leg,0
+P07_DP_0197,P07_POI_0078,杨浦区市场监督管理局,office_service,destination_candidate,74.65,True,B,4,multi_leg,1
+P07_DP_0199,P07_POI_0078,杨浦区市场监督管理局,office_service,destination_candidate,69.17,True,B,4,multi_leg,1
+P07_DP_0200,P07_POI_0078,杨浦区市场监督管理局,office_service,destination_candidate,79.54,True,B,4,multi_leg,1
+P07_DP_0208,P07_POI_0002,五角场街道,other_named,context_candidate,55.11,True,B,4,multi_leg,1
+P07_DP_0210,P07_POI_0154,政旦东路社区卫生服务站,health,destination_candidate,59.47,True,B,4,multi_leg,1
+P07_DP_0211,P07_POI_0010,国美电器,retail,destination_candidate,39.6,True,B,4,multi_leg,1
+P07_DP_0212,P07_POI_0010,国美电器,retail,destination_candidate,61.52,True,B,4,multi_leg,1
+P07_DP_0213,P07_POI_0010,国美电器,retail,destination_candidate,66.68,True,B,4,multi_leg,1
+P07_DP_0215,P07_POI_0010,国美电器,retail,destination_candidate,29.35,True,B,4,multi_leg,1
+P07_DP_0217,P07_POI_0010,国美电器,retail,destination_candidate,54.77,True,B,4,multi_leg,1
+P07_DP_0218,P07_POI_0010,国美电器,retail,destination_candidate,60.01,True,B,4,multi_leg,1
+P07_DP_0226,P07_POI_0215,仁德路逸仙路,transport,landmark_candidate,58.01,False,B,3,three_leg,1
+P07_DP_0234,P07_POI_0072,大柏树,transport,landmark_candidate,45.14,False,B,3,three_leg,1
+P07_DP_0235,P07_POI_0072,大柏树,transport,landmark_candidate,25.24,False,A,3,three_leg,0
+P07_DP_0236,P07_POI_0072,大柏树,transport,landmark_candidate,52.07,False,B,3,three_leg,1
+P07_DP_0237,P07_POI_0188,大柏树,transport,landmark_candidate,57.98,False,B,3,three_leg,1
+P07_DP_0240,P07_POI_0127,中国光大银行,finance,destination_candidate,68.59,True,B,3,three_leg,1
+P07_DP_0241,P07_POI_0208,吉浦路仁德路,transport,landmark_candidate,21.91,False,A,3,three_leg,0
+P07_DP_0242,P07_POI_0040,吉浦路仁德路,transport,landmark_candidate,39.05,False,A,3,three_leg,0
+P07_DP_0243,P07_POI_0040,吉浦路仁德路,transport,landmark_candidate,46.96,False,B,3,three_leg,1
+P07_DP_0244,P07_POI_0211,吉浦路仁德路,transport,landmark_candidate,7.2,False,A,3,three_leg,0
+P07_DP_0246,P07_POI_0127,中国光大银行,finance,destination_candidate,77.52,True,B,3,three_leg,1
+P07_DP_0247,P07_POI_0318,纪念路吉浦路,transport,landmark_candidate,29.95,False,A,3,three_leg,0
+P07_DP_0273,P07_POI_0011,邯郸路运光路,transport,landmark_candidate,32.04,False,A,3,three_leg,0
+P07_DP_0283,P07_POI_0202,政立路国权北路,transport,landmark_candidate,46.22,False,B,3,three_leg,1
+P07_DP_0284,P07_POI_0338,老年大学,education,landmark_candidate,38.4,True,A,3,three_leg,0
+P07_DP_0285,P07_POI_0338,老年大学,education,landmark_candidate,14.07,True,A,3,three_leg,0
+P07_DP_0286,P07_POI_0338,老年大学,education,landmark_candidate,31.56,True,A,3,three_leg,0
+P07_DP_0287,P07_POI_0339,老年活动中心,civic,landmark_candidate,13.27,True,A,3,three_leg,0
+P07_DP_0288,P07_POI_0339,老年活动中心,civic,landmark_candidate,14.69,True,A,3,three_leg,0
+P07_DP_0296,P07_POI_0326,三门路国权北路,transport,landmark_candidate,59.49,False,B,3,three_leg,1
+P07_DP_0297,P07_POI_0326,三门路国权北路,transport,landmark_candidate,49.49,False,B,3,three_leg,1
+P07_DP_0300,P07_POI_0326,三门路国权北路,transport,landmark_candidate,50.81,False,B,3,three_leg,1
+P07_DP_0301,P07_POI_0339,老年活动中心,civic,landmark_candidate,71.88,True,B,3,three_leg,1
+P07_DP_0302,P07_POI_0339,老年活动中心,civic,landmark_candidate,51.16,True,A,3,three_leg,0
+P07_DP_0303,P07_POI_0147,三门路国权北路,transport,landmark_candidate,3.3,False,A,3,three_leg,0
+P07_DP_0304,P07_POI_0326,三门路国权北路,transport,landmark_candidate,48.82,False,B,3,three_leg,1
+P07_DP_0307,P07_POI_0326,三门路国权北路,transport,landmark_candidate,47.87,False,B,3,three_leg,1
+P07_DP_0313,P07_POI_0206,武川路武东路,transport,landmark_candidate,44.97,False,B,3,three_leg,1
+P07_DP_0316,P07_POI_0258,国权北路政立路,transport,landmark_candidate,59.16,False,B,3,three_leg,1
+P07_DP_0324,P07_POI_0259,国权北路政立路,transport,landmark_candidate,43.35,False,B,3,three_leg,1
+P07_DP_0327,P07_POI_0019,武川路政立路,transport,landmark_candidate,9.29,False,A,3,three_leg,0
+P07_DP_0328,P07_POI_0260,武川路武东路,transport,landmark_candidate,50.14,False,B,3,three_leg,1
+P07_DP_0337,P07_POI_0093,复旦大学北区学生公寓南门,education,landmark_candidate,4.19,True,A,3,three_leg,0
+P07_DP_0340,P07_POI_0075,复旦大学北区学生公寓北门,education,landmark_candidate,54.95,True,A,3,three_leg,0
+P07_DP_0341,P07_POI_0093,复旦大学北区学生公寓南门,education,landmark_candidate,79.3,True,B,3,three_leg,1
+P07_DP_0342,P07_POI_0075,复旦大学北区学生公寓北门,education,landmark_candidate,15.5,True,A,3,three_leg,0
+P07_DP_0344,P07_POI_0075,复旦大学北区学生公寓北门,education,landmark_candidate,74.13,True,B,3,three_leg,1
+P07_DP_0346,P07_POI_0075,复旦大学北区学生公寓北门,education,landmark_candidate,49.16,True,A,3,three_leg,0
+P07_DP_0356,P07_POI_0342,科技成果馆,visitor_landmark,landmark_candidate,56.7,False,B,3,three_leg,1
+P07_DP_0360,P07_POI_0349,郑裕彤剧场‌,leisure,landmark_candidate,67.88,True,B,3,three_leg,1
+P07_DP_0362,P07_POI_0379,相辉堂,other_named,context_candidate,78.03,True,B,3,three_leg,1
+P07_DP_0365,P07_POI_0379,相辉堂,other_named,context_candidate,60.8,True,B,3,three_leg,1
+P07_DP_0366,P07_POI_0349,郑裕彤剧场‌,leisure,landmark_candidate,37.45,True,A,3,three_leg,0
+P07_DP_0367,P07_POI_0349,郑裕彤剧场‌,leisure,landmark_candidate,53.64,True,A,3,three_leg,0
+P07_DP_0370,P07_POI_0349,郑裕彤剧场‌,leisure,landmark_candidate,46.31,True,A,3,three_leg,0
+P07_DP_0373,P07_POI_0379,相辉堂,other_named,context_candidate,34.79,True,B,3,three_leg,1
+P07_DP_0374,P07_POI_0349,郑裕彤剧场‌,leisure,landmark_candidate,59.28,True,A,3,three_leg,0
+P07_DP_0378,P07_POI_0149,复旦大学,transport,landmark_candidate,16.63,False,A,3,three_leg,0
+P07_DP_0380,P07_POI_0228,武东路政民路,transport,landmark_candidate,31.02,False,A,3,three_leg,0
+P07_DP_0381,P07_POI_0379,相辉堂,other_named,context_candidate,38.49,True,B,3,three_leg,1
+P07_DP_0382,P07_POI_0379,相辉堂,other_named,context_candidate,43.88,True,B,3,three_leg,1
+P07_DP_0385,P07_POI_0150,复旦大学,transport,landmark_candidate,16.58,False,A,3,three_leg,0
+P07_DP_0392,P07_POI_0343,艺术馆,visitor_landmark,landmark_candidate,51.46,False,B,3,three_leg,1
+P07_DP_0405,P07_POI_0357,复旦大学,education,landmark_candidate,53.89,True,A,3,three_leg,0
+P07_DP_0408,P07_POI_0357,复旦大学,education,landmark_candidate,38.51,True,A,3,three_leg,0
+P07_DP_0428,P07_POI_0230,肺科医院,transport,landmark_candidate,33.54,False,A,3,three_leg,0
+P07_DP_0431,P07_POI_0275,主席像,visitor_landmark,landmark_candidate,47.87,True,A,3,three_leg,0
+P07_DP_0435,P07_POI_0275,主席像,visitor_landmark,landmark_candidate,41.24,True,A,3,three_leg,0
+P07_DP_0436,P07_POI_0232,肺科医院,transport,landmark_candidate,51.27,False,B,3,three_leg,1
+P07_DP_0437,P07_POI_0041,国定路邮政所,civic,landmark_candidate,71.45,True,B,3,three_leg,1
+P07_DP_0438,P07_POI_0289,国定路政立路,transport,landmark_candidate,36.6,False,A,3,three_leg,0
+P07_DP_0439,P07_POI_0289,国定路政立路,transport,landmark_candidate,42.04,False,B,3,three_leg,1
+P07_DP_0441,P07_POI_0275,主席像,visitor_landmark,landmark_candidate,57.15,True,A,3,three_leg,0
+P07_DP_0442,P07_POI_0041,国定路邮政所,civic,landmark_candidate,60.82,True,B,3,three_leg,1
+P07_DP_0443,P07_POI_0041,国定路邮政所,civic,landmark_candidate,63.47,True,B,3,three_leg,1
+P07_DP_0444,P07_POI_0352,全家,retail,destination_candidate,38.91,True,B,3,three_leg,1
+P07_DP_0445,P07_POI_0352,全家,retail,destination_candidate,79.94,True,B,3,three_leg,1
+P07_DP_0447,P07_POI_0062,复旦大学,transport,landmark_candidate,24.76,False,A,3,three_leg,0
+P07_DP_0448,P07_POI_0352,全家,retail,destination_candidate,71.1,True,B,3,three_leg,1
+P07_DP_0450,P07_POI_0041,国定路邮政所,civic,landmark_candidate,17.64,True,A,3,three_leg,0
+P07_DP_0452,P07_POI_0197,复旦大学,transport,landmark_candidate,23.79,False,A,3,three_leg,0
+P07_DP_0455,P07_POI_0284,国定新村,transport,landmark_candidate,50.1,False,B,3,three_leg,1
+P07_DP_0458,P07_POI_0353,硕果,visitor_landmark,landmark_candidate,53.07,True,A,3,three_leg,0
+P07_DP_0459,P07_POI_0353,硕果,visitor_landmark,landmark_candidate,56.14,True,A,3,three_leg,0
+P07_DP_0460,P07_POI_0353,硕果,visitor_landmark,landmark_candidate,70.24,True,B,3,three_leg,1
+P07_DP_0461,P07_POI_0353,硕果,visitor_landmark,landmark_candidate,75.22,True,B,3,three_leg,1
+P07_DP_0473,P07_POI_0122,和记菜馆,food_drink,destination_candidate,40.84,True,B,3,three_leg,1
+P07_DP_0479,P07_POI_0125,BHB健身,leisure,landmark_candidate,28.19,True,A,3,three_leg,0
+P07_DP_0480,P07_POI_0125,BHB健身,leisure,landmark_candidate,32.49,True,A,3,three_leg,0
+P07_DP_0482,P07_POI_0242,国定路邯郸路,transport,landmark_candidate,58.61,False,B,3,three_leg,1
+P07_DP_0501,P07_POI_0076,复宣酒店,accommodation,destination_candidate,72.92,True,B,3,three_leg,1
+P07_DP_0503,P07_POI_0170,All The Lovers,food_drink,destination_candidate,51.93,False,B,3,three_leg,1
+P07_DP_0504,P07_POI_0170,All The Lovers,food_drink,destination_candidate,49.43,False,B,3,three_leg,1
+P07_DP_0505,P07_POI_0170,All The Lovers,food_drink,destination_candidate,45.78,False,B,3,three_leg,1
+P07_DP_0507,P07_POI_0085,club,visitor_landmark,landmark_candidate,69.36,True,B,3,three_leg,1
+P07_DP_0508,P07_POI_0170,All The Lovers,food_drink,destination_candidate,42.01,False,B,3,three_leg,1
+P07_DP_0510,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,50.79,False,B,3,three_leg,1
+P07_DP_0511,P07_POI_0170,All The Lovers,food_drink,destination_candidate,42.41,False,B,3,three_leg,1
+P07_DP_0512,P07_POI_0170,All The Lovers,food_drink,destination_candidate,36.62,False,B,3,three_leg,1
+P07_DP_0516,P07_POI_0170,All The Lovers,food_drink,destination_candidate,27.27,False,B,3,three_leg,1
+P07_DP_0518,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,34.87,False,B,3,three_leg,1
+P07_DP_0519,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,29.44,False,B,3,three_leg,1
+P07_DP_0521,P07_POI_0170,All The Lovers,food_drink,destination_candidate,21.61,False,B,3,three_leg,1
+P07_DP_0522,P07_POI_0267,国权路四平路,transport,landmark_candidate,35.26,False,A,3,three_leg,0
+P07_DP_0524,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,18.9,False,B,3,three_leg,1
+P07_DP_0525,P07_POI_0296,政修路国达路,transport,landmark_candidate,31.62,False,A,3,three_leg,0
+P07_DP_0527,P07_POI_0076,复宣酒店,accommodation,destination_candidate,68.69,True,B,3,three_leg,1
+P07_DP_0528,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,14.98,False,B,3,three_leg,1
+P07_DP_0529,P07_POI_0153,乐乐面包LELE Bakery,retail,destination_candidate,18.75,False,B,3,three_leg,1
+P07_DP_0531,P07_POI_0094,永昌烧味餐厅,food_drink,destination_candidate,51.78,False,B,3,three_leg,1
+P07_DP_0532,P07_POI_0298,将将好小酒馆(大学路店),food_drink,destination_candidate,79.04,True,B,3,three_leg,1
+P07_DP_0533,P07_POI_0298,将将好小酒馆(大学路店),food_drink,destination_candidate,42.07,True,B,3,three_leg,1
+P07_DP_0534,P07_POI_0298,将将好小酒馆(大学路店),food_drink,destination_candidate,17.22,False,B,3,three_leg,1
+P07_DP_0537,P07_POI_0306,VOLA,food_drink,destination_candidate,36.26,False,B,3,three_leg,1
+P07_DP_0538,P07_POI_0298,将将好小酒馆(大学路店),food_drink,destination_candidate,48.18,False,B,3,three_leg,1
+P07_DP_0539,P07_POI_0190,四平路国权路,transport,landmark_candidate,38.27,False,A,3,three_leg,0
+P07_DP_0540,P07_POI_0299,粤星隆港式茶餐厅(大学路店),food_drink,destination_candidate,47.61,False,B,3,three_leg,1
+P07_DP_0542,P07_POI_0192,四平路国权路,transport,landmark_candidate,24.88,False,A,3,three_leg,0
+P07_DP_0544,P07_POI_0192,四平路国权路,transport,landmark_candidate,38.5,False,A,3,three_leg,0
+P07_DP_0545,P07_POI_0190,四平路国权路,transport,landmark_candidate,57.4,False,B,3,three_leg,1
+P07_DP_0546,P07_POI_0144,国权路,transport,landmark_candidate,18.36,False,A,3,three_leg,0
+P07_DP_0547,P07_POI_0192,四平路国权路,transport,landmark_candidate,43.17,False,B,3,three_leg,1
+P07_DP_0548,P07_POI_0100,10,transport,landmark_candidate,64.13,True,B,3,three_leg,1
+P07_DP_0549,P07_POI_0145,国权路,transport,landmark_candidate,35.3,False,A,3,three_leg,0
+P07_DP_0551,P07_POI_0192,四平路国权路,transport,landmark_candidate,57.46,False,B,3,three_leg,1
+P07_DP_0559,P07_POI_0327,全家,retail,destination_candidate,78.95,True,B,3,three_leg,1
+P07_DP_0560,P07_POI_0276,有家川菜,food_drink,destination_candidate,23.84,False,B,3,three_leg,1
+P07_DP_0565,P07_POI_0333,罗森,retail,destination_candidate,75.97,True,B,3,three_leg,1
+P07_DP_0570,P07_POI_0189,政立路淞沪路,transport,landmark_candidate,46.7,False,B,3,three_leg,1
+P07_DP_0572,P07_POI_0283,政民路淞沪路,transport,landmark_candidate,50.3,False,B,3,three_leg,1
+P07_DP_0578,P07_POI_0189,政立路淞沪路,transport,landmark_candidate,32.4,False,A,3,three_leg,0
+P07_DP_0581,P07_POI_0189,政立路淞沪路,transport,landmark_candidate,23.51,False,A,3,three_leg,0
+P07_DP_0583,P07_POI_0189,政立路淞沪路,transport,landmark_candidate,19.65,False,A,3,three_leg,0
+P07_DP_0584,P07_POI_0098,11,transport,landmark_candidate,13.97,False,A,3,three_leg,0
+P07_DP_0587,P07_POI_0346,Dairy Queen,food_drink,destination_candidate,59.96,False,B,3,three_leg,1
+P07_DP_0592,P07_POI_0050,淞沪路政立路,transport,landmark_candidate,24.26,False,A,3,three_leg,0
+P07_DP_0594,P07_POI_0050,淞沪路政立路,transport,landmark_candidate,6.05,False,A,3,three_leg,0
+P07_DP_0598,P07_POI_0098,11,transport,landmark_candidate,64.57,True,B,3,three_leg,1
+P07_DP_0601,P07_POI_0050,淞沪路政立路,transport,landmark_candidate,19.23,False,A,3,three_leg,0
+P07_DP_0603,P07_POI_0099,12,transport,landmark_candidate,17.98,False,A,3,three_leg,0
+P07_DP_0604,P07_POI_0101,13,transport,landmark_candidate,37.32,False,A,3,three_leg,0
+P07_DP_0605,P07_POI_0099,12,transport,landmark_candidate,17.88,False,A,3,three_leg,0
+P07_DP_0607,P07_POI_0098,11,transport,landmark_candidate,58.5,True,A,3,three_leg,0
+P07_DP_0608,P07_POI_0346,Dairy Queen,food_drink,destination_candidate,35.73,False,B,3,three_leg,1
+P07_DP_0610,P07_POI_0099,12,transport,landmark_candidate,5.89,False,A,3,three_leg,0
+P07_DP_0612,P07_POI_0032,五角场,transport,landmark_candidate,57.64,False,B,3,three_leg,1
+P07_DP_0614,P07_POI_0099,12,transport,landmark_candidate,21.96,False,A,3,three_leg,0
+P07_DP_0616,P07_POI_0297,小喜田,food_drink,destination_candidate,25.14,True,B,3,three_leg,1
+P07_DP_0619,P07_POI_0101,13,transport,landmark_candidate,38.41,False,A,3,three_leg,0
+P07_DP_0623,P07_POI_0101,13,transport,landmark_candidate,30.85,False,A,3,three_leg,0
+P07_DP_0625,P07_POI_0099,12,transport,landmark_candidate,22.26,False,A,3,three_leg,0
+P07_DP_0626,P07_POI_0297,小喜田,food_drink,destination_candidate,11.03,False,B,3,three_leg,1
+P07_DP_0630,P07_POI_0297,小喜田,food_drink,destination_candidate,15.41,False,B,3,three_leg,1
+P07_DP_0631,P07_POI_0297,小喜田,food_drink,destination_candidate,32.11,False,B,3,three_leg,1
+P07_DP_0634,P07_POI_0297,小喜田,food_drink,destination_candidate,34.14,False,B,3,three_leg,1
+P07_DP_0637,P07_POI_0297,小喜田,food_drink,destination_candidate,45.46,False,B,3,three_leg,1
+P07_DP_0638,P07_POI_0340,Decathlon,retail,destination_candidate,42.57,True,B,3,three_leg,1
+P07_DP_0639,P07_POI_0340,Decathlon,retail,destination_candidate,26.51,True,B,3,three_leg,1
+P07_DP_0641,P07_POI_0340,Decathlon,retail,destination_candidate,30.43,True,B,3,three_leg,1
+P07_DP_0643,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,66.16,True,B,3,three_leg,1
+P07_DP_0645,P07_POI_0340,Decathlon,retail,destination_candidate,65.94,True,B,3,three_leg,1
+P07_DP_0646,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,57.21,True,A,3,three_leg,0
+P07_DP_0649,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,49.57,True,A,3,three_leg,0
+P07_DP_0650,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,66.38,True,B,3,three_leg,1
+P07_DP_0651,P07_POI_0340,Decathlon,retail,destination_candidate,73.27,True,B,3,three_leg,1
+P07_DP_0652,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,50.39,True,A,3,three_leg,0
+P07_DP_0653,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,41.52,True,A,3,three_leg,0
+P07_DP_0654,P07_POI_0340,Decathlon,retail,destination_candidate,74.18,True,B,3,three_leg,1
+P07_DP_0655,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,57.98,True,A,3,three_leg,0
+P07_DP_0658,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,49.36,True,A,3,three_leg,0
+P07_DP_0662,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,42.35,True,A,3,three_leg,0
+P07_DP_0666,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,32.19,True,A,3,three_leg,0
+P07_DP_0671,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,39.16,True,A,3,three_leg,0
+P07_DP_0672,P07_POI_0113,海底捞火锅,food_drink,destination_candidate,75.65,True,B,3,three_leg,1
+P07_DP_0673,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,43.51,True,A,3,three_leg,0
+P07_DP_0675,P07_POI_0056,江湾体育场 (原上海市体育场),visitor_landmark,landmark_candidate,53.69,True,A,3,three_leg,0
+P07_DP_0680,P07_POI_0143,五角场,other_named,context_candidate,73.81,True,B,3,three_leg,1
+P07_DP_0681,P07_POI_0092,苏宁易购,retail,destination_candidate,36.41,True,B,3,three_leg,1
+P07_DP_0683,P07_POI_0143,五角场,other_named,context_candidate,67.54,True,B,3,three_leg,1
+P07_DP_0684,P07_POI_0143,五角场,other_named,context_candidate,45.68,True,B,3,three_leg,1
+P07_DP_0687,P07_POI_0143,五角场,other_named,context_candidate,37.54,True,B,3,three_leg,1
+P07_DP_0688,P07_POI_0143,五角场,other_named,context_candidate,75.33,True,B,3,three_leg,1
+P07_DP_0689,P07_POI_0105,政本路邮政支局,civic,landmark_candidate,20.82,True,A,3,three_leg,0
+P07_DP_0692,P07_POI_0061,国定路黄兴路,transport,landmark_candidate,54.04,False,B,3,three_leg,1
+P07_DP_0693,P07_POI_0143,五角场,other_named,context_candidate,31.55,True,B,3,three_leg,1
+P07_DP_0694,P07_POI_0143,五角场,other_named,context_candidate,61.83,True,B,3,three_leg,1
+P07_DP_0695,P07_POI_0143,五角场,other_named,context_candidate,44.7,True,B,3,three_leg,1
+P07_DP_0696,P07_POI_0132,政立路市光路,transport,landmark_candidate,55.69,False,B,3,three_leg,1
+P07_DP_0698,P07_POI_0143,五角场,other_named,context_candidate,34.6,True,B,3,three_leg,1
+P07_DP_0699,P07_POI_0143,五角场,other_named,context_candidate,62.42,True,B,3,three_leg,1
+P07_DP_0704,P07_POI_0143,五角场,other_named,context_candidate,49.55,True,B,3,three_leg,1
+P07_DP_0705,P07_POI_0251,国权路政本路,transport,landmark_candidate,43.41,False,B,3,three_leg,1
+P07_DP_0706,P07_POI_0133,政立路市光路,transport,landmark_candidate,45.45,False,B,3,three_leg,1
+P07_DP_0708,P07_POI_0133,政立路市光路,transport,landmark_candidate,54.53,False,B,3,three_leg,1
+P07_DP_0709,P07_POI_0143,五角场,other_named,context_candidate,74.82,True,B,3,three_leg,1
+P07_DP_0711,P07_POI_0143,五角场,other_named,context_candidate,76.39,True,B,3,three_leg,1
+P07_DP_0712,P07_POI_0133,政立路市光路,transport,landmark_candidate,36.37,False,A,3,three_leg,0
+P07_DP_0714,P07_POI_0133,政立路市光路,transport,landmark_candidate,46.03,False,B,3,three_leg,1
+P07_DP_0718,P07_POI_0251,国权路政本路,transport,landmark_candidate,10.84,False,A,3,three_leg,0
+P07_DP_0719,P07_POI_0037,五角场,transport,landmark_candidate,6.36,False,A,3,three_leg,0
+P07_DP_0722,P07_POI_0044,政立路市光路,transport,landmark_candidate,40.84,False,B,3,three_leg,1
+P07_DP_0728,P07_POI_0044,政立路市光路,transport,landmark_candidate,55.0,False,B,3,three_leg,1
+P07_DP_0734,P07_POI_0351,猩球健身,leisure,landmark_candidate,77.61,True,B,3,three_leg,1
+P07_DP_0748,P07_POI_0030,五角场,transport,landmark_candidate,49.9,False,B,3,three_leg,1
+P07_DP_0760,P07_POI_0351,猩球健身,leisure,landmark_candidate,67.47,True,B,3,three_leg,1
+P07_DP_0765,P07_POI_0351,猩球健身,leisure,landmark_candidate,72.28,True,B,3,three_leg,1
+P07_DP_0768,P07_POI_0045,5号出入口,other_named,context_candidate,57.72,True,B,3,three_leg,1
+P07_DP_0769,P07_POI_0045,5号出入口,other_named,context_candidate,29.31,True,B,3,three_leg,1
+P07_DP_0771,P07_POI_0045,5号出入口,other_named,context_candidate,5.87,True,B,3,three_leg,1
+P07_DP_0773,P07_POI_0045,5号出入口,other_named,context_candidate,57.75,True,B,3,three_leg,1
+P07_DP_0775,P07_POI_0045,5号出入口,other_named,context_candidate,9.73,True,B,3,three_leg,1
+P07_DP_0778,P07_POI_0002,五角场街道,other_named,context_candidate,70.21,True,B,3,three_leg,1
+P07_DP_0781,P07_POI_0010,国美电器,retail,destination_candidate,61.98,True,B,3,three_leg,1
+P07_DP_0786,P07_POI_0010,国美电器,retail,destination_candidate,51.66,True,B,3,three_leg,1
+P07_DP_0787,P07_POI_0136,国定东路翔殷路,transport,landmark_candidate,21.55,False,A,3,three_leg,0
+P07_DP_0798,P07_POI_0012,国和路,other_named,context_candidate,67.66,True,B,3,three_leg,1

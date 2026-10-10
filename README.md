@@ -1,10 +1,10 @@
 # P07 — Semantic POI Enrichment for Task-Oriented Wayfinding
 
 ## Status
-**P07-01: Semantic Data Foundation — v0.1**
+**P07-02: Decision Points & Semantic Cue Association — v0.2**
 
 ## Project type
-Independent GIScience portfolio project focused on semantic spatial modelling and task-oriented wayfinding.
+Independent GIScience portfolio project focused on semantic spatial modelling and task-oriented pedestrian wayfinding.
 
 ## Study area
 Wujiaochang Subdistrict, Yangpu District, Shanghai.
@@ -12,46 +12,71 @@ Wujiaochang Subdistrict, Yangpu District, Shanghai.
 ## Core question
 **How can raw spatial objects be transformed into task-relevant semantic cues for pedestrian wayfinding?**
 
-The project does not treat a POI merely as a mapped object. It asks which spatial entities may function as destinations, landmarks, contextual anchors or later decision-point cues in a route representation.
+P07 treats mapped objects, network decision points and route-context cues as different analytical entities. A POI becomes useful for navigation only when its semantics and spatial relationship to a decision context make it relevant.
 
-## Why this project
-Earlier projects demonstrated network accessibility, remote sensing / spatial machine learning, and multi-source planning-oriented decision support. P07 adds a different capability: **semantic spatial data modelling and rule-based spatial reasoning**.
+## v0.1 — semantic data foundation
+The first stage extracted and harmonised OSM point and polygon objects into 12 navigation-oriented semantic classes and preliminary navigation-role candidates.
 
-P07 deliberately stops before natural-language route generation. The planned next-stage project will use the structured semantic representation as input to route-description generation.
+## v0.2 — decision points and semantic support
+v0.2 connects the semantic POI model to the pedestrian network.
 
-## Data
-- Geofabrik Shanghai OpenStreetMap PBF snapshot: 2026-09-29.
-- Operational Wujiaochang subdistrict boundary reused from the audited P06 spatial database.
+### Decision-point candidates
+Topological intersections are extracted from the validated pedestrian routing network:
+- degree 3 → `three_leg`
+- degree ≥4 → `multi_leg`
 
-## v0.1 implementation
-1. Extract point and polygon spatial objects within Wujiaochang.
-2. Recover OSM semantic tags from explicit fields and `other_tags`.
-3. Harmonize heterogeneous OSM tags into navigation-oriented semantic classes.
-4. Assign a preliminary navigation-role candidate:
-   - `landmark_candidate`
-   - `destination_candidate`
-   - `context_candidate`
-   - `unclassified`
-5. Convert polygon POIs to representative points for later network and relative-position reasoning while preserving source geometry as WKT.
-6. Store the result in a GeoPackage with an auditable semantic POI table.
+Degree-1 endpoints and ordinary degree-2 network vertices are not treated as decision-point candidates in this stage.
 
-## Current output
+### POI association
+For every decision point, semantic POIs within a 100 m screening window are identified. The 100 m radius is an internal analytical search window, not a cognitive or planning standard.
+
+### Cue tiers
+Cue suitability is assigned through transparent rule tiers rather than a weighted composite score:
+
+- **A — strong cue support:** named landmark candidate within 40 m, or a locally unique named landmark within 60 m.
+- **B — usable cue support:** named landmark/destination within 60 m, or a locally unique named feature within 80 m.
+- **C — contextual evidence:** other named features within 100 m.
+- **D — weak/unusable in the current rule set.**
+
+For each decision point, one primary A/B cue is selected where available, prioritising A over B, local semantic uniqueness, and then shorter distance.
+
+## Current results
 - Semantic POI candidates: **381**
-- Semantic classes: **12**
-- GeoPackage: `p07_wujiaochang_semantic_poi.gpkg`
+- Decision-point candidates: **798**
+- Three-leg junction candidates: **574**
+- Multi-leg intersection candidates: **224**
+- Decision–POI associations within 100 m: **1,587**
+- Decision points with an A/B primary semantic cue: **295**
+
+The map shows where pedestrian decision points have stronger semantic support in the current OSM-derived evidence. Grey points are not interpreted as deficient intersections; they simply do not have an A/B cue under the current rule set.
+
+## Final v0.2 visual outputs
+- `outputs/maps/01_decision_point_semantic_support.png`
+- `outputs/charts/01_semantic_support_by_junction_type.png`
+
+The plotting region and legend / interpretation region are physically separated in both figures.
+
+## GeoPackage layers
+- `study_boundary`
+- `semantic_poi_candidates`
+- `pedestrian_network_context`
+- `decision_point_candidates`
+- `primary_semantic_cues`
+- `decision_poi_associations_ab`
 
 ## Planned analytical chain
-Raw OSM object → semantic harmonisation → decision-point detection → POI/decision-point association → relative spatial relation → cue salience → structured route cue representation.
+Raw spatial object → semantic harmonisation → decision-point detection → POI association → route-specific relative spatial relation → cue selection → structured route-cue representation.
 
 ## Important limitations
-- OSM POI completeness is uneven and should not be interpreted as a complete business or facility register.
-- The v0.1 navigation role is a transparent rule-based candidate label, not a validated cognitive-salience measure.
-- Polygon representative points are analytical anchors for semantic reasoning; they are not automatically equivalent to real entrances.
-- The Wujiaochang boundary is operational OSM geometry rather than a legal cadastral boundary.
-- Natural-language instructions are outside the v0.1 scope.
+- OSM POI completeness is uneven and should not be interpreted as a complete real-world inventory.
+- Network degree is a topological proxy for potential decision points; actual route decisions are route-dependent.
+- Cue tiers are transparent screening rules, not validated measures of cognitive salience.
+- The 100 m association radius and tier distance thresholds are internal analytical parameters.
+- Polygon representative points are analytical anchors and are not automatically equivalent to physical entrances.
+- Natural-language route generation remains outside the v0.2 scope.
 
 ## Technology
-Python · GeoPandas · Shapely · GeoPackage · OpenStreetMap PBF · Git/GitHub
+Python · GeoPandas · NetworkX · SciPy · Shapely · GeoPackage · OpenStreetMap-derived data · Git/GitHub
 
 ## Version
-**v0.1 — Semantic data foundation**
+**v0.2 — Decision points and semantic cue association**

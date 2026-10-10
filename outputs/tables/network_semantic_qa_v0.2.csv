@@ -1,0 +1,7 @@
+﻿check,observed,expected,status
+decision_points,798,>0,PASS
+three_leg_decisions,574,reported,PASS
+multi_leg_decisions,224,reported,PASS
+decision_poi_associations,1587,>0,PASS
+primary_cue_decisions,295,reported,PASS
+unique_decision_ids,798,798,PASS
