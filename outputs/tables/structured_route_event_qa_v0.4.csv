@@ -1,0 +1,5 @@
+﻿check,observed,expected,status
+structured_route_events,36,36,PASS
+unique_route_event_ids,36,36,PASS
+supported_event_relations,17,17,PASS
+unsupported_function_labels,19,19,PASS

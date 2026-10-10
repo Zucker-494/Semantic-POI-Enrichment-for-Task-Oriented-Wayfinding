@@ -1,7 +1,7 @@
 # P07 — Semantic POI Enrichment for Task-Oriented Wayfinding
 
 ## Status
-**P07-03: Route-Context Spatial Relations — v0.3**
+**P07-04: Structured Route-Cue Representation — v0.4**
 
 ## Project type
 Independent GIScience portfolio project focused on semantic spatial modelling and task-oriented pedestrian wayfinding.
@@ -10,95 +10,107 @@ Independent GIScience portfolio project focused on semantic spatial modelling an
 Wujiaochang Subdistrict, Yangpu District, Shanghai.
 
 ## Core question
-**How can raw spatial objects be transformed into route-relevant semantic cues for pedestrian wayfinding?**
+**How can mapped spatial objects be transformed into structured, route-relevant semantic cues for pedestrian wayfinding?**
 
-P07 separates mapped objects, semantic POIs, topological decision points, and route-specific navigation cues. A POI is not treated as a navigation cue merely because it is nearby; its semantic role and its spatial relationship to an actual route decision are made explicit.
+P07 separates five analytical entities:
+1. raw spatial objects,
+2. semantic POIs,
+3. topological decision points,
+4. route-context cue relations,
+5. structured route events.
+
+The project intentionally stops before natural-language route instruction generation.
 
 ## Analytical progression
 
 ### v0.1 — semantic data foundation
-OSM point and polygon objects were harmonised into navigation-oriented semantic classes and preliminary navigation-role candidates.
+OSM objects were harmonised into navigation-oriented semantic classes and preliminary navigation-role candidates.
 
 ### v0.2 — decision points and semantic cue association
-Topological junction candidates were extracted from the pedestrian network and associated with nearby semantic POIs using transparent A/B/C/D cue rules.
+Topological junction candidates were extracted from the pedestrian network and associated with nearby semantic POIs using transparent A/B/C/D screening rules.
 
 ### v0.3 — route-context spatial relations
-v0.3 introduces explicit route context.
+Reproducible demonstration routes were introduced. Traversed decision points were linked to display-quality A/B cues and cue position was represented relative to the incoming travel direction.
 
-Three reproducible demonstration routes are generated between named transport origins and named non-transport destinations. For each route:
-1. the shortest pedestrian-network path is calculated;
-2. topological decision points traversed by the route are identified;
-3. eligible A/B semantic cues are re-screened with display-name QA;
-4. cue position is classified relative to the incoming travel direction as `left`, `right`, `ahead`, or `behind`;
-5. route-level semantic-cue coverage is summarised.
+### v0.4 — structured route-cue representation
+v0.4 converts route-context relationships into a structured event schema.
 
-## Demonstration routes
+For every traversed route decision, the dataset records:
+- route and sequence position,
+- maneuver,
+- turn angle,
+- junction type,
+- cue availability,
+- cue tier,
+- cue semantic class,
+- lateral relation,
+- longitudinal route relation,
+- cue-function candidate.
 
-| route_id   | origin_name    | destination_name   | destination_class   |   route_length_m |   decision_points |   cue_supported_decisions |   cue_coverage_pct |
-|:-----------|:---------------|:-------------------|:--------------------|-----------------:|------------------:|--------------------------:|-------------------:|
-| P07_R01    | 国定路政立路   | 小喜田             | food_drink          |           1200.9 |                19 |                         6 |               31.6 |
-| P07_R02    | 政立路国权北路 | 国定路邮政所       | civic               |           1201.3 |                 6 |                         5 |               83.3 |
-| P07_R03    | 武东路武川路   | 校史馆             | visitor_landmark    |           1203.6 |                11 |                         6 |               54.5 |
+## Longitudinal route relation
+Cue position is compared with the decision point along route chainage:
 
-The routes are demonstration cases, not a statistical sample of all trips in Wujiaochang.
+- `before_decision`: projected cue position is more than 20 m before the decision;
+- `at_decision`: projected cue position lies within ±20 m of the decision;
+- `after_decision`: projected cue position is more than 20 m after the decision.
 
-## Route selection rule
-Candidate routes satisfy all of the following:
-- origin: named transport `landmark_candidate`;
-- destination: named non-transport semantic POI;
-- network distance: 700–1,800 m;
-- display-quality names only.
+The ±20 m partition is an internal analytical parameter for reproducible representation, not a perceptual standard.
 
-From the eligible set, routes are selected deterministically by proximity to a 1.2 km target length while enforcing distinct destination classes, origin names and destination names. The 1.2 km target is used only to produce comparable worked examples; it is not a planning or behavioural standard.
+## Cue-function candidates
+The structured representation distinguishes several candidate functions, for example:
+- `turn_anchor_candidate`
+- `post_turn_confirmation_candidate`
+- `continuity_anchor_candidate`
+- `continuity_confirmation_candidate`
+- `approach_context_candidate`
+- `unsupported_event`
 
-## Relative spatial relation
-Cue position is calculated from the incoming route direction at each decision point.
-
-- `ahead`: cue lies approximately along the incoming travel direction;
-- `behind`: cue lies approximately opposite the incoming direction;
-- `left` / `right`: cue is laterally offset from the incoming direction.
-
-The angular partition is an internal analytical rule used to create reproducible route-context semantics. It is not claimed as a validated perceptual threshold.
+These are analytical labels describing the cue's route context. They are not experimentally validated cognitive categories.
 
 ## Current results
-- Demonstration routes: **3**
-- Route-context decision points: **36**
-- Route-specific A/B cue relations: **17**
-- Cue coverage ranges from **31.6%** to **83.3%** across the three demonstration routes.
 
-## Final v0.3 visual outputs
-- `outputs/maps/01_route_context_worked_example.png`
-- `outputs/charts/01_route_semantic_cue_coverage.png`
+| route_id   |   route_events |   supported_events |   turning_events |   supported_turns |   continue_events |   supported_continue |   overall_support_pct |   turn_support_pct |   continue_support_pct |
+|:-----------|---------------:|-------------------:|-----------------:|------------------:|------------------:|---------------------:|----------------------:|-------------------:|-----------------------:|
+| P07_R01    |             19 |                  6 |                7 |                 3 |                12 |                    3 |                  31.6 |               42.9 |                   25   |
+| P07_R02    |              6 |                  5 |                3 |                 3 |                 3 |                    2 |                  83.3 |              100   |                   66.7 |
+| P07_R03    |             11 |                  6 |                6 |                 3 |                 5 |                    3 |                  54.5 |               50   |                   60   |
 
-The plotting region and legend / interpretation region are physically separated. Superseded v0.1/v0.2 figures are not retained in the v0.3 public visual directories.
+Across the three demonstration routes:
+- structured route events: **36**
+- route events with a display-quality semantic cue: **17**
+- unsupported route events: **19**
+- unsupported turning events: **7**
 
-## GeoPackage layers
-- `study_boundary`
-- `semantic_poi_candidates`
-- `pedestrian_network_context`
-- `decision_point_candidates`
-- `primary_semantic_cues`
-- `decision_poi_associations_ab`
-- `demonstration_routes`
-- `route_context_decisions`
-- `route_context_cues`
-- `route_context_cue_connectors`
+The route-level results show that overall cue availability can hide important differences between turning events and continue-through events.
 
-## Planned analytical chain
-Raw spatial object → semantic harmonisation → decision-point detection → local semantic association → route-context relation → cue-selection refinement → structured route-cue representation.
+## Final v0.4 visual outputs
+- `outputs/maps/01_route_event_cue_gaps.png`
+- `outputs/charts/01_turn_vs_continue_cue_support.png`
 
-Natural-language instruction generation remains outside v0.3 and is intentionally reserved for a later project stage.
+The map and chart use physically separated plot and legend / interpretation panels. Superseded v0.1–v0.3 figures are not retained in the v0.4 public visual directories.
+
+## Core tables
+- `outputs/tables/structured_route_events_v0.4.csv`
+- `outputs/tables/route_event_support_summary_v0.4.csv`
+- `outputs/tables/cue_function_counts_v0.4.csv`
+- `outputs/tables/route_cue_gap_events_v0.4.csv`
+
+## GeoPackage
+`p07_wujiaochang_semantic_poi.gpkg` now includes `structured_route_events` in addition to the earlier semantic POI, decision-point, route and route-context layers.
+
+## Interpretation
+The main contribution of v0.4 is a machine-readable route-event representation. It provides a clean hand-off from spatial reasoning to a later route-expression stage without generating language prematurely.
 
 ## Important limitations
 - OSM POI completeness is uneven.
-- Network degree is only a structural proxy for potential decision points.
-- Demonstration routes are reproducible examples, not observed user trips.
-- Cue tiers and angular relation rules are transparent internal parameters rather than validated cognitive-salience models.
-- A repeated landmark may support more than one nearby route decision; the worked-example map merges duplicate cue symbols while retaining separate decision–cue connectors.
-- Polygon representative points are analytical anchors and are not automatically equivalent to physical entrances.
+- Network degree is a structural proxy for possible decision points.
+- Demonstration routes are reproducible examples rather than observed user trips.
+- Cue tiers, the ±20 m longitudinal partition and cue-function labels are transparent internal analytical rules.
+- A missing A/B cue can reflect local semantic scarcity, incomplete OSM tagging or limitations of the screening rules.
+- The project does not claim that selected cues are preferred by blind or low-vision travellers without user validation.
 
 ## Technology
 Python · GeoPandas · NetworkX · SciPy · Shapely · GeoPackage · OpenStreetMap-derived data · Git/GitHub
 
 ## Version
-**v0.3 — Route-context spatial relations**
+**v0.4 — Structured route-cue representation**

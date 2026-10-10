@@ -1,0 +1,16 @@
+﻿route_id,cue_function_candidate,count
+P07_R01,continuity_anchor_candidate,1
+P07_R01,continuity_confirmation_candidate,2
+P07_R01,post_turn_confirmation_candidate,1
+P07_R01,turn_anchor_candidate,2
+P07_R01,unsupported_event,13
+P07_R02,approach_context_candidate,1
+P07_R02,continuity_confirmation_candidate,1
+P07_R02,post_turn_confirmation_candidate,2
+P07_R02,turn_anchor_candidate,1
+P07_R02,unsupported_event,1
+P07_R03,approach_context_candidate,1
+P07_R03,continuity_confirmation_candidate,2
+P07_R03,post_turn_confirmation_candidate,1
+P07_R03,turn_anchor_candidate,2
+P07_R03,unsupported_event,5
