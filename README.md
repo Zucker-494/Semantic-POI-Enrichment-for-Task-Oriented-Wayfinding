@@ -65,8 +65,8 @@ The three routes remain reproducible demonstration cases rather than a statistic
 ## Final v0.5 visual outputs
 The final public visual set uses one global numbering sequence across map and chart directories:
 
-1. `outputs/maps/01_route_event_cue_gaps.png`
-2. `outputs/charts/02_structured_route_event_sequence.png`
+1. `outputs/maps/03_route_event_cue_gaps.png`
+2. `outputs/charts/04_structured_route_event_sequence.png`
 
 The two figures answer different questions:
 - **01** identifies where actual turning events lack an eligible semantic cue.
