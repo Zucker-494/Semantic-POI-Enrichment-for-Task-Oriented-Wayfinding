@@ -1,0 +1,6 @@
+﻿check,observed,expected,status
+study_boundary_count,1,1,PASS
+semantic_poi_candidates,381,>0,PASS
+unique_semantic_poi_id,381,381,PASS
+nonnull_geometry,381,381,PASS
+semantic_classes,12,>=5,PASS

@@ -1,0 +1,3 @@
+﻿source_id,dataset,provider,reference_date,use,provenance_note
+SRC01,Shanghai OSM PBF snapshot,Geofabrik / OpenStreetMap contributors,2026-09-29,POI and spatial-object extraction,Local raw snapshot; no live API dependency.
+SRC02,Wujiaochang operational subdistrict boundary,Derived in P06 from Geofabrik OSM administrative geometry; semantics checked against the frozen 12-subdistrict list,2026-09-28,Study-area clipping and reporting boundary,"Operational geometry, not cadastral/legal boundary."
