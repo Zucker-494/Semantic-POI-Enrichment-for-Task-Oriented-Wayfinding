@@ -1,0 +1,4 @@
+﻿route_id,origin_id,origin_name,destination_id,destination_name,destination_class,route_length_m,decision_points,turning_decisions,cue_supported_decisions,tier_a,tier_b,cue_coverage_pct
+P07_R01,P07_POI_0289,国定路政立路,P07_POI_0297,小喜田,food_drink,1200.9,19,7,6,1,5,31.6
+P07_R02,P07_POI_0202,政立路国权北路,P07_POI_0041,国定路邮政所,civic,1201.3,6,3,5,1,4,83.3
+P07_R03,P07_POI_0224,武东路武川路,P07_POI_0341,校史馆,visitor_landmark,1203.6,11,6,6,2,4,54.5

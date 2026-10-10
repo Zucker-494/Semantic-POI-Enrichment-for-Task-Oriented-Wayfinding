@@ -1,0 +1,6 @@
+﻿check,observed,expected,status
+demonstration_routes,3,3,PASS
+route_context_decisions,36,>0,PASS
+routes_with_decisions,3,3,PASS
+route_decision_unique_keys,36,36,PASS
+route_specific_relations,18,reported,PASS
