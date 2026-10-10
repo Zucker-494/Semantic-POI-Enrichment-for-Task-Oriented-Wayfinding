@@ -1,0 +1,43 @@
+{
+  "title": "P07 structured route-event representation",
+  "version": "0.5",
+  "route_event_required_fields": [
+    "route_event_id",
+    "sequence",
+    "decision_id",
+    "maneuver",
+    "turn_angle_deg",
+    "junction_type",
+    "network_degree",
+    "decision_chainage_m",
+    "has_semantic_cue",
+    "cue"
+  ],
+  "maneuver_values": [
+    "continue",
+    "left",
+    "right"
+  ],
+  "cue_tier_values": [
+    "A",
+    "B"
+  ],
+  "cue_lateral_values": [
+    "left",
+    "right",
+    "on_route"
+  ],
+  "cue_longitudinal_values": [
+    "before_decision",
+    "at_decision",
+    "after_decision"
+  ],
+  "cue_function_values": [
+    "approach_context_candidate",
+    "continuity_anchor_candidate",
+    "continuity_confirmation_candidate",
+    "post_turn_confirmation_candidate",
+    "turn_anchor_candidate",
+    "unsupported_event"
+  ]
+}

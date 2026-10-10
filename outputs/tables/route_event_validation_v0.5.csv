@@ -1,0 +1,11 @@
+﻿check,observed,expected,severity,status
+unique_route_event_id,36,36,error,PASS
+all_route_ids_resolve,36,36,error,PASS
+all_decision_ids_resolve,36,36,error,PASS
+route_sequence_contiguous,3,3,error,PASS
+decision_chainage_monotonic,3,3,error,PASS
+supported_event_cue_fields_complete,17,17,error,PASS
+unsupported_event_cue_fields_null,19,19,error,PASS
+supported_cues_resolve_to_semantic_poi,17,17,error,PASS
+supported_cue_tiers_valid,17,17,error,PASS
+longitudinal_relation_consistent,17,17,error,PASS

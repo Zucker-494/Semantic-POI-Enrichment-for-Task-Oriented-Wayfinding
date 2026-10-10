@@ -1,0 +1,4 @@
+﻿route_id,total_events,supported_events,turning_events,supported_turns,unsupported_turns,event_support_pct,turn_support_pct
+P07_R01,19,6,7,3,4,31.6,42.9
+P07_R02,6,5,3,3,0,83.3,100.0
+P07_R03,11,6,6,3,3,54.5,50.0

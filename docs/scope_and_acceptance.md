@@ -1,20 +1,23 @@
 # P07 Scope and Acceptance Criteria
 
-## This week
-P07 should demonstrate a reproducible transformation from raw spatial objects to task-oriented navigation semantics.
+## Project objective
+Demonstrate a reproducible transformation from raw spatial objects to structured route-relevant semantic cues for pedestrian wayfinding.
 
-## Required capabilities
-- semantic POI harmonisation
-- pedestrian-network decision-point extraction
-- route-context spatial association
-- relative spatial-relation derivation
-- explicit cue-selection logic
-- professional final visualization and README
+## Final capability set
+- semantic POI harmonisation — complete
+- pedestrian-network decision-point extraction — complete
+- local POI / decision-point association — complete
+- route-context spatial relation — complete
+- explicit cue-selection logic — complete
+- structured route-event representation — complete
+- schema / reference validation — complete
+- professional final visualization and README — complete
 
 ## Out of scope
-- full natural-language route instruction generation
+- natural-language route instruction generation
 - indoor supermarket ontology
 - user-study validation
 - claims that OSM represents a complete real-world POI inventory
 
-These are intentionally reserved for later work rather than being forced into a one-week portfolio project.
+## Delivery status
+**P07 v0.5 — complete and frozen unless a substantive analytical error is identified.**
