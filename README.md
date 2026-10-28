@@ -1,114 +1,44 @@
-# P07 — Semantic POI Enrichment for Task-Oriented Wayfinding
+# Route-Relevant Semantic Cue Availability at Pedestrian Decision Points
 
-## Status
-**P07-05: Schema Validation & Final Route-Event Delivery — v0.5**
+## Study
 
-## Project type
-Independent GIScience portfolio project focused on semantic spatial modelling and task-oriented pedestrian wayfinding.
+This repository contains the initial spatial representation developed for a study of semantic cues at pedestrian decision points in Shanghai. The publicly available spatial data currently cover Wujiaochang Subdistrict, Yangpu District. The repository's existing release contains three demonstration routes and 36 structured route events.
 
-## Study area
-Wujiaochang Subdistrict, Yangpu District, Shanghai.
+The study distinguishes semantic objects recorded in geographic data from candidate cues available at particular route decisions. Decision-point associations are derived from pedestrian-network topology and proximity to named semantic POIs. Route context determines the selected candidate's spatial relation to travel direction.
 
-## Core question
-**How can mapped spatial objects be transformed into structured, route-relevant semantic cues for pedestrian wayfinding?**
+The Tier A/B criteria identify candidate support under explicit screening rules. They do not measure pedestrian perception or demonstrated navigation effectiveness.
 
-P07 separates raw spatial objects, semantic POIs, network decision points, route-context cue relations and structured route events. The final v0.5 delivery provides a validated machine-readable representation that can be handed to a later route-expression stage without generating natural-language instructions prematurely.
+## Data
 
-## Analytical progression
-- **v0.1:** semantic POI foundation
-- **v0.2:** decision points and local semantic association
-- **v0.3:** route-context spatial relations
-- **v0.4:** structured route-cue representation
-- **v0.5:** schema validation and final delivery
+`p07_wujiaochang_semantic_poi.gpkg` contains the Wujiaochang study boundary, semantic POI candidates, pedestrian network, decision points, route-context relations and demonstration routes.
 
-## Final representation
-Each route event contains:
-- route ID and event sequence;
-- decision-point reference;
-- maneuver and turn angle;
-- junction type and network degree;
-- chainage along route;
-- semantic-cue availability;
-- cue semantic class and Tier A/B status where available;
-- cue lateral relation;
-- cue longitudinal offset and `before / at / after decision` relation;
-- cue-function candidate.
+The source registry is in [docs/source_registry.csv](docs/source_registry.csv). The analysis uses an OpenStreetMap-derived Shanghai snapshot dated 29 September 2026 and an operational Wujiaochang boundary. The boundary is not a legal cadastral boundary.
 
-## Validation
-The final route-event representation passed all **10** core consistency checks.
+The structured records for the three demonstration routes are in [outputs/structured_route_events_v0.5.json](outputs/structured_route_events_v0.5.json). Their schema is in [docs/route_event_schema_v0.5.json](docs/route_event_schema_v0.5.json).
 
-| check                                  |   observed |   expected | status   |
-|:---------------------------------------|-----------:|-----------:|:---------|
-| unique_route_event_id                  |         36 |         36 | PASS     |
-| all_route_ids_resolve                  |         36 |         36 | PASS     |
-| all_decision_ids_resolve               |         36 |         36 | PASS     |
-| route_sequence_contiguous              |          3 |          3 | PASS     |
-| decision_chainage_monotonic            |          3 |          3 | PASS     |
-| supported_event_cue_fields_complete    |         17 |         17 | PASS     |
-| unsupported_event_cue_fields_null      |         19 |         19 | PASS     |
-| supported_cues_resolve_to_semantic_poi |         17 |         17 | PASS     |
-| supported_cue_tiers_valid              |         17 |         17 | PASS     |
-| longitudinal_relation_consistent       |         17 |         17 | PASS     |
+## Spatial representation
 
-These checks cover identifier uniqueness, route and decision references, route-event sequence continuity, chainage ordering, cue-field completeness, null handling for unsupported events, POI reference consistency, cue-tier constraints and longitudinal-relation consistency.
+The existing implementation uses pedestrian-network vertices with degree ≥ 3 as decision-point candidates. Nearby semantic POIs are assigned tier labels using their names, candidate roles, local class uniqueness and spatial distance. Route-context attributes include maneuver, chainage, lateral relation and position before, at or after a decision.
 
-## Demonstration-route completeness
+The screening rules and validation procedures are recorded in [docs/methodology_v0.2.md](docs/methodology_v0.2.md), [docs/methodology_v0.3.md](docs/methodology_v0.3.md), [docs/methodology_v0.4.md](docs/methodology_v0.4.md) and [docs/methodology_v0.5.md](docs/methodology_v0.5.md).
 
-| route_id   |   total_events |   supported_events |   turning_events |   supported_turns |   unsupported_turns |   event_support_pct |   turn_support_pct |
-|:-----------|---------------:|-------------------:|-----------------:|------------------:|--------------------:|--------------------:|-------------------:|
-| P07_R01    |             19 |                  6 |                7 |                 3 |                   4 |                31.6 |               42.9 |
-| P07_R02    |              6 |                  5 |                3 |                 3 |                   0 |                83.3 |              100   |
-| P07_R03    |             11 |                  6 |                6 |                 3 |                   3 |                54.5 |               50   |
+## Code and outputs
 
-The three routes remain reproducible demonstration cases rather than a statistical sample of all trips.
+The `src/` directory contains the extraction specification, decision-point association analysis, spatial-relation functions and route-event validation. The initial extraction file does not yet implement a complete raw-data-to-GeoPackage pipeline. The current scripts therefore do not reproduce all published files from the original OSM snapshot.
 
-## Final v0.5 visual outputs
-The final public visual set uses one global numbering sequence across map and chart directories:
+Numerical summaries are in `outputs/tables/`. Existing maps and charts are in `outputs/maps/` and `outputs/charts/`. Some files retain earlier development-version suffixes.
 
-1. `outputs/maps/03_route_event_cue_gaps.png`
-2. `outputs/charts/04_structured_route_event_sequence.png`
+## Current coverage
 
-The two figures answer different questions:
-- **01** identifies where actual turning events lack an eligible semantic cue.
-- **02** shows how the final event schema represents route order, maneuvers and cue-supported events.
+| Measure | Wujiaochang demonstration data |
+|---|---:|
+| Routes | 3 |
+| Structured route events | 36 |
+| Cue-supported events | 17 |
+| Events without a selected cue | 19 |
 
-Plot and legend / explanation regions are physically separated. Simplified Chinese text is rendered with an SC CJK font to avoid regional glyph variants.
+These are demonstration data, not the district-wide analysis population. Results from the subsequent Yangpu District study, including its route sample, event population and sensitivity analyses, are not yet deposited in this repository.
 
-## Structured delivery
-- `outputs/structured_route_events_v0.5.json`
-- `docs/route_event_schema_v0.5.json`
-- `outputs/tables/route_event_validation_v0.5.csv`
-- `outputs/tables/route_representation_completeness_v0.5.csv`
+## Source and interpretation
 
-The JSON delivery preserves the route → event sequence → cue hierarchy and provides a clean hand-off for later route-expression or prototype work.
-
-## GeoPackage
-`p07_wujiaochang_semantic_poi.gpkg` contains the spatial layers accumulated through the project, including:
-- `study_boundary`
-- `semantic_poi_candidates`
-- `pedestrian_network_context`
-- `decision_point_candidates`
-- `primary_semantic_cues`
-- `demonstration_routes`
-- `route_context_decisions`
-- `route_context_cues`
-- `structured_route_events`
-
-## Main findings
-The project shows that semantic POI availability and route-event support are not equivalent. A route can contain many mapped objects while still lacking an eligible semantic anchor at specific direction-changing events.
-
-Across the three demonstration routes, turning-event cue support ranges from **42.9%** to **100.0%**. This makes cue gaps visible at the event level rather than hiding them inside route-level POI counts.
-
-## Limitations
-- OSM POI completeness is uneven.
-- Network degree is a structural proxy for potential decision points.
-- Demonstration routes are reproducible examples rather than observed user trips.
-- Cue tiers, distance thresholds, longitudinal partitions and cue-function labels are transparent internal analytical rules rather than validated perceptual standards.
-- A missing A/B cue can reflect true local scarcity, incomplete tagging or limitations of the screening model.
-- The project does not claim that selected cues are preferred by blind or low-vision travellers without user validation.
-
-## Technology
-Python · GeoPandas · NetworkX · SciPy · Shapely · GeoPackage · OpenStreetMap-derived data · Git/GitHub
-
-## Version
-**v0.5 — Schema validation and final route-event delivery**
+OpenStreetMap data are © OpenStreetMap contributors and subject to the Open Database License. The analysis treats mapped POIs as an incomplete observation of the environment. Network junctions are structural candidates, and a cue class represents modelled availability rather than observed pedestrian use.
